@@ -1,0 +1,180 @@
+.modal-backdrop {
+    background-color: transparent; 
+    color: transparent; 
+}
+
+.modal-content {
+    border-color: var(--quoto);
+    border-width: 0px !important;
+}
+
+    .modal-content .col.help {
+        padding: 0px;
+        margin: 0px;
+
+        text-align: right;
+    }
+
+        .modal-content .col.help .btn-link {
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+    .modal-content .form-label.help,
+    .modal-content .collapse.help {
+        margin-top: 0.5rem;
+        padding: 0.5rem;
+    }
+
+.modal-content .col.day {
+    padding-right: 0.75rem;
+}
+
+.modal-content .col.day:last-child {
+    padding-right: 0rem;
+}
+
+.modal-header {
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: none;
+    line-height: 1rem;
+}
+    .modal-header .close {
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 0.8rem;
+    }
+
+    .modal-header .btn-info {
+        padding: 1rem;
+
+        margin: -1.5rem -1rem -1rem -2.4rem;
+        font-size: 1rem;
+        line-height: 0.8rem;
+    }
+
+    .modal-header:hover,
+    .modal-header:focus {
+        cursor: move;
+    }
+
+/* Quotodoro */
+
+.quoto .modal-content .form-label.help,
+.quoto .modal-content .collapse.help {
+    background-color: var(--quoto-light);
+    white-space: pre-wrap;
+    border-radius: 3px;
+}
+
+.quoto .modal-content .col.help .btn-link {
+    background-color: var(--quoto);
+    color: white;
+    padding: 0.2rem;
+    padding-right: 0.4rem;
+    padding-left: 0.4rem;
+    margin: 0.2rem;
+    line-height: 1;
+    text-align: center;
+}
+
+.quoto .modal-content .btn-link,
+.quoto .modal-content .form-check-label a {
+    color: var(--quoto);
+    font-weight: bold;
+}
+
+.quoto .btn-primary,
+.quoto .btn-outline-secondary {
+    border-width: 1px;
+    border-style: solid;
+}
+
+    .quoto .btn-primary,
+    .quoto .btn-primary:active,
+    .quoto .btn-primary:active:focus {
+        border-color: var(--quoto);
+        background-color: var(--quoto);
+        color: white;
+    }
+
+    .quoto .btn-primary:focus,
+    .quoto .btn-primary:active:focus,
+    .quoto .btn-primary:not(:disabled):not(.disabled):active:focus {
+        -webkit-box-shadow: var(--quoto-shadow);
+        box-shadow: var(--quoto-shadow);
+    }
+
+.quoto .btn.close,
+.quoto .btn.close:focus,
+.quoto .btn.close:active:focus,
+.quoto .btn.close:not(:disabled):not(.disabled):active:focus {
+    color: #212529;
+    background-color: white;
+
+    border-style: none;
+    border-radius: 0px;
+    border-top-right-radius: 3px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: 1;
+}
+
+    .quoto .btn.close:hover,
+    .quoto .btn.close:active:hover,
+    .quoto .btn.close:not(:disabled):not(.disabled):active:hover {
+        background-color: var(--quoto);
+        color: white;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        opacity: 1;
+    }
+
+.quoto .btn.btn-info,
+.quoto .btn.btn-info:focus,
+.quoto .btn.btn-info:active:focus,
+.quoto .btn.btn-info:not(:disabled):not(.disabled):active:focus {
+    font-weight: 700;
+
+    color: #212529;
+    background-color: white;
+
+    border-style: none;
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    opacity: 1;
+}
+
+    .quoto .btn.btn-info:hover,
+    .quoto .btn.btn-info:active:hover,
+    .quoto .btn.btn-info:not(:disabled):not(.disabled):active:hover {
+        background-color: var(--quoto);
+        color: white;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        opacity: 1;
+    }
+
+    .quoto .btn-outline-secondary,
+    .quoto .btn-outline-secondary:active,
+    .quoto .btn-outline-secondary:active:focus {
+        border-color: var(--quoto);
+        background-color: white;
+        color: var(--quoto);
+    }
+
+    .quoto .btn-outline-secondary:focus,
+    .quoto .btn-outline-secondary:active:focus,
+    .quoto .btn-outline-secondary:not(:disabled):not(.disabled):active:focus {
+        -webkit-box-shadow: var(--quoto-shadow);
+        box-shadow: var(--quoto-shadow);
+    }
+
+    .quoto .btn-outline-secondary:hover,
+    .quoto .btn-outline-secondary:active:hover,
+    .quoto .btn-outline-secondary:not(:disabled):not(.disabled):active:hover {
+        background-color: var(--quoto);
+        color: white;
+    }

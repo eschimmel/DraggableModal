@@ -1,0 +1,87 @@
+html {
+    font-size: 12px;    
+}
+
+body {
+    background-color: white;
+}
+
+.container.full-width {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+    max-width: 100% !important;
+}
+
+.container,
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.container .quotodoro {
+    background-color: var(--background-color);
+}
+
+.container .white {
+    background-color: white;
+}
+
+.container .quotodoro .menu-row {
+    margin: 0;
+
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0.5em;
+}
+
+.col {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.btn {
+    line-height:1.25rem;
+    border: none;
+    border-width: 0px;    
+}
+
+.btn:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.btn-xs {
+    line-height: 0.8rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.btn:disabled img {
+	opacity: 0.4;
+}
+
+.shadow-sm {
+    box-shadow: -1px -1px rgba(128, 128, 128, 0.25), 2px 2px 2px rgba(128, 128, 128, 0.75) !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+input[type='checkbox'] {
+    border-color: darkgrey;
+    background-color: white;
+}
+
+input[type='checkbox']:active,
+input[type='checkbox']:focus,
+input[type='checkbox']:active:focus,
+input[type='checkbox']:not(:disabled):not(.disabled):active:focus {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}

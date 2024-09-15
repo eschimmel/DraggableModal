@@ -1,0 +1,22 @@
+﻿@inherits LayoutComponentBase
+
+<div class=@ModalBackdropCssClass style="@ModalStyle"></div>
+<div role="dialog" aria-modal="true" class=@ModalCssClass tabindex="-1" style=@ModalStyle
+     ondragover="event.preventDefault();"
+     ondragstart="event.dataTransfer.setData('', event.target.id);">
+    <div class="modal-dialog modal-lg">
+        <div @ref="ModalContent" class="modal-content shadow-lg" draggable="true" @ondragstart="DragStart" @ondragend="DragEnd">
+            <div class="modal-header">
+                @Title
+                <div class="ml-auto" draggable="false">
+                    @if (OnToggleHelp.HasDelegate)
+                    {
+                        <button type="button" class="btn btn-info" @onclick="ToggleHelp" title="Help">?</button>
+                    }
+                    <button type="button" class="close btn" @onclick="Close" title="Close">🗙</button>
+                </div>
+            </div>
+            <div class="modal-body" draggable="true" ondragstart="event.preventDefault(); event.stopPropagation()">@ChildContent</div>
+        </div>
+    </div>
+</div>

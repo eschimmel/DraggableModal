@@ -1,0 +1,24 @@
+﻿@page "/"
+@using DraggableModal.WebApplication.Blazor.Components.Modals
+
+<PageTitle>Byte217 - Draggable Modal</PageTitle>
+
+<div class="container quoto">
+    <h1>Blazor Draggable Modal</h1>
+    <p>
+        This solution shows how to create a draggable modal in Blazor Server.
+    </p>
+    <p>
+        The example opens a modal to add a new 'Project' or to edit and existing 'Project'.
+        The modal can be opened by pressing one of the button below.
+    </p>
+    <p>
+        The opened modal can be dragged by pressing the title and holding the left mouse button.
+        More details about the functionality of the modal can be found in the readme.MD file.
+    </p>
+
+    <button class="btn btn-outline-secondary" type="button" @onclick="OpenAddProjectModal">Add project</button>
+    <button class="btn btn-primary" type="button" @onclick="OpenEditProjectModal">Edit Project</button>
+</div>
+
+<ProjectModal @ref="ProjectModal"/>

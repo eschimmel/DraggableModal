@@ -1,0 +1,31 @@
+﻿@using DraggableModal.WebApplication.Blazor.Components.Modals
+
+<ModalLayout @ref="ModalLayout" OnToggleHelp="ToggleHelp">
+    <EditForm Model=@Project OnValidSubmit="Save">
+        <Help @ref="Help">Projects and goals are the umbrella for your tasks.
+This can be helpful to get an overview of the work done per client or project.
+Or it can give you a overview of your effort to reach a goal.
+When you deactivate a project or goal it cannot be selected anymore, when creating a task.</Help>
+        
+        <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <InputText id="name" class="form-control" DisplayName="Name" type="text" placeholder="Name" @bind-Value="Project.Name" required maxlength="50"/>
+        </div>
+        <div class="form-group">
+            <label class="form-label" for="description">Description</label>
+            <InputTextArea id="description" class="form-control" DisplayName="Description" type="text" placeholder="Description" @bind-Value="Project.Description" maxlength="300"/>
+        </div>        
+        <div class="form-group">
+            <div class="form-check">                
+                <InputCheckbox class="form-check-input" id="active" DisplayName="Active" @bind-Value="Project.Active"/>
+                <label class="form-check-label" for="active">Active</label>
+            </div>
+        </div>
+        <div class="row pt-2">
+            <div class="p-0 pr-3">
+                <button class="btn btn-primary mr-2" type="submit">Save</button>
+                <button class="btn btn-outline-secondary" type="button" @onclick="Close">Cancel</button>
+            </div>
+        </div>
+    </EditForm>
+</ModalLayout>
